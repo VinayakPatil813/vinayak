@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h2>JavaScript For Loop</h2>
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="name"></p>
+<p id="cars"></p>
+<script>
+    const cars =["BMW","Volvo","Saab","Ford","Fiat","Audi"];
+    const bike =["A","X","S","F"];
+    
+
+    
+    let text ="";
+    let bke ="";
+    for (let i = 0; i < cars.length; i++) {
+          text += cars[i] + "<br>";
+    }
+    for (let j = 0; j < bike.length; j++) {
+          bke += bike[j] + "<br>";
+    }
+    
+    document.getElementById("demo").innerHTML = text;
+    document.getElementById("demo1").innerHTML = bke;
+
+    const person ={fname: "vinayak",lname: "Patil",age: "21"};
+    let name="";
+
+    for (let x in person) {
+          name += person[x] + "<br>";
+    }
+    document.getElementById("name").innerHTML = name;
+
+
+    const cars ={"BMW","Volvo","Saab","Ford","Fiat","Audi"};
+    let car="";
+
+    for (let x of cars) {
+          car += x + "<br>";
+    }
+    document.getElementById("cars").innerHTML = cars;
+
+
+</script>
+    
+</body>
+</html>
